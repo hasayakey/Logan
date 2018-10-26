@@ -20,34 +20,34 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_PK_WRITE_C)
 
-#include "mbedtls/pk.h"
-#include "mbedtls/asn1write.h"
-#include "mbedtls/oid.h"
+#import "pk.h"
+#import "asn1write.h"
+#import "oid.h"
 
 #include <string.h>
 
 #if defined(MBEDTLS_RSA_C)
-#include "mbedtls/rsa.h"
+#import "rsa.h"
 #endif
 #if defined(MBEDTLS_ECP_C)
-#include "mbedtls/ecp.h"
+#import "ecp.h"
 #endif
 #if defined(MBEDTLS_ECDSA_C)
-#include "mbedtls/ecdsa.h"
+#import "ecdsa.h"
 #endif
 #if defined(MBEDTLS_PEM_WRITE_C)
-#include "mbedtls/pem.h"
+#import "pem.h"
 #endif
 
 #if defined(MBEDTLS_PLATFORM_C)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #else
 #include <stdlib.h>
 #define mbedtls_calloc    calloc

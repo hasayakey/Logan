@@ -20,14 +20,14 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_VERSION_C)
 
-#include "mbedtls/version.h"
+#import "version.h"
 
 #include <string.h>
 

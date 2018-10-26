@@ -24,7 +24,7 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
@@ -32,14 +32,14 @@
 #if defined(MBEDTLS_SSL_COOKIE_C)
 
 #if defined(MBEDTLS_PLATFORM_C)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #else
 #define mbedtls_calloc    calloc
 #define mbedtls_free      free
 #endif
 
-#include "mbedtls/ssl_cookie.h"
-#include "mbedtls/ssl_internal.h"
+#import "ssl_cookie.h"
+#import "ssl_internal.h"
 
 #include <string.h>
 

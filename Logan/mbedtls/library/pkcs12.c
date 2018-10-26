@@ -26,25 +26,25 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_PKCS12_C)
 
-#include "mbedtls/pkcs12.h"
-#include "mbedtls/asn1.h"
-#include "mbedtls/cipher.h"
+#import "pkcs12.h"
+#import "asn1.h"
+#import "cipher.h"
 
 #include <string.h>
 
 #if defined(MBEDTLS_ARC4_C)
-#include "mbedtls/arc4.h"
+#import "arc4.h"
 #endif
 
 #if defined(MBEDTLS_DES_C)
-#include "mbedtls/des.h"
+#import "des.h"
 #endif
 
 /* Implementation that should never be optimized out by the compiler */
