@@ -26,22 +26,22 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_X509_CRT_WRITE_C)
 
-#include "mbedtls/x509_crt.h"
-#include "mbedtls/oid.h"
-#include "mbedtls/asn1write.h"
-#include "mbedtls/sha1.h"
+#import "x509_crt.h"
+#import "oid.h"
+#import "asn1write.h"
+#import "sha1.h"
 
 #include <string.h>
 
 #if defined(MBEDTLS_PEM_WRITE_C)
-#include "mbedtls/pem.h"
+#import "pem.h"
 #endif /* MBEDTLS_PEM_WRITE_C */
 
 /* Implementation that should never be optimized out by the compiler */

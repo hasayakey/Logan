@@ -20,25 +20,25 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_ENTROPY_C)
 
-#include "mbedtls/entropy.h"
-#include "mbedtls/entropy_poll.h"
+#import "entropy.h"
+#import "entropy_poll.h"
 
 #if defined(MBEDTLS_TIMING_C)
 #include <string.h>
-#include "mbedtls/timing.h"
+#import "timing.h"
 #endif
 #if defined(MBEDTLS_HAVEGE_C)
-#include "mbedtls/havege.h"
+#import "havege.h"
 #endif
 #if defined(MBEDTLS_ENTROPY_NV_SEED)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #endif
 
 #if !defined(MBEDTLS_NO_PLATFORM_ENTROPY)

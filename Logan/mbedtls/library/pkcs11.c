@@ -23,16 +23,16 @@
  *  This file is part of mbed TLS (https://tls.mbed.org)
  */
 
-#include "mbedtls/pkcs11.h"
+#import "pkcs11.h"
 
 #if defined(MBEDTLS_PKCS11_C)
 
-#include "mbedtls/md.h"
-#include "mbedtls/oid.h"
-#include "mbedtls/x509_crt.h"
+#import "md.h"
+#import "oid.h"
+#import "x509_crt.h"
 
 #if defined(MBEDTLS_PLATFORM_C)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #else
 #include <stdlib.h>
 #define mbedtls_calloc    calloc

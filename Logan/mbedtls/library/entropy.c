@@ -20,7 +20,7 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
@@ -33,8 +33,8 @@
 #warning "**** THIS BUILD IS *NOT* SUITABLE FOR PRODUCTION USE "
 #endif
 
-#include "mbedtls/entropy.h"
-#include "mbedtls/entropy_poll.h"
+#import "entropy.h"
+#import "entropy_poll.h"
 
 #include <string.h>
 
@@ -43,12 +43,12 @@
 #endif
 
 #if defined(MBEDTLS_ENTROPY_NV_SEED)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #endif
 
 #if defined(MBEDTLS_SELF_TEST)
 #if defined(MBEDTLS_PLATFORM_C)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #else
 #include <stdio.h>
 #define mbedtls_printf     printf
@@ -56,7 +56,7 @@
 #endif /* MBEDTLS_SELF_TEST */
 
 #if defined(MBEDTLS_HAVEGE_C)
-#include "mbedtls/havege.h"
+#import "havege.h"
 #endif
 
 /* Implementation that should never be optimized out by the compiler */

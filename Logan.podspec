@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
     s.public_header_files = "Logan/iOS/*.h"
 
     s.subspec 'mbedtls' do |mbedtls|
-        mbedtls.source_files = "Logan/mbedtls/**/*.{h,c}"
-        mbedtls.header_dir = 'mbedtls'
+        mbedtls.source_files = "Logan/mbedtls/*.{h,c}"
     end
 end
