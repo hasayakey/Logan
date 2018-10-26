@@ -30,25 +30,25 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_X509_CRT_PARSE_C)
 
-#include "mbedtls/x509_crt.h"
-#include "mbedtls/oid.h"
+#import "x509_crt.h"
+#import "oid.h"
 
 #include <stdio.h>
 #include <string.h>
 
 #if defined(MBEDTLS_PEM_PARSE_C)
-#include "mbedtls/pem.h"
+#import "pem.h"
 #endif
 
 #if defined(MBEDTLS_PLATFORM_C)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #else
 #include <stdlib.h>
 #define mbedtls_free       free
@@ -57,7 +57,7 @@
 #endif
 
 #if defined(MBEDTLS_THREADING_C)
-#include "mbedtls/threading.h"
+#import "threading.h"
 #endif
 
 #if defined(_WIN32) && !defined(EFIX64) && !defined(EFI32)

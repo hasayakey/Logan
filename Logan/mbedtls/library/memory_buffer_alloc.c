@@ -20,17 +20,17 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_MEMORY_BUFFER_ALLOC_C)
-#include "mbedtls/memory_buffer_alloc.h"
+#import "memory_buffer_alloc.h"
 
 /* No need for the header guard as MBEDTLS_MEMORY_BUFFER_ALLOC_C
    is dependent upon MBEDTLS_PLATFORM_C */
-#include "mbedtls/platform.h"
+#import "platform.h"
 
 #include <string.h>
 
@@ -39,7 +39,7 @@
 #endif
 
 #if defined(MBEDTLS_THREADING_C)
-#include "mbedtls/threading.h"
+#import "threading.h"
 #endif
 
 /* Implementation that should never be optimized out by the compiler */

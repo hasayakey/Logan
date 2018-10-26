@@ -24,41 +24,41 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_CIPHER_C)
 
-#include "mbedtls/cipher_internal.h"
+#import "cipher_internal.h"
 
 #if defined(MBEDTLS_AES_C)
-#include "mbedtls/aes.h"
+#import "aes.h"
 #endif
 
 #if defined(MBEDTLS_ARC4_C)
-#include "mbedtls/arc4.h"
+#import "arc4.h"
 #endif
 
 #if defined(MBEDTLS_CAMELLIA_C)
-#include "mbedtls/camellia.h"
+#import "camellia.h"
 #endif
 
 #if defined(MBEDTLS_DES_C)
-#include "mbedtls/des.h"
+#import "des.h"
 #endif
 
 #if defined(MBEDTLS_BLOWFISH_C)
-#include "mbedtls/blowfish.h"
+#import "blowfish.h"
 #endif
 
 #if defined(MBEDTLS_GCM_C)
-#include "mbedtls/gcm.h"
+#import "gcm.h"
 #endif
 
 #if defined(MBEDTLS_CCM_C)
-#include "mbedtls/ccm.h"
+#import "ccm.h"
 #endif
 
 #if defined(MBEDTLS_CIPHER_NULL_CIPHER)
@@ -66,7 +66,7 @@
 #endif
 
 #if defined(MBEDTLS_PLATFORM_C)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #else
 #include <stdlib.h>
 #define mbedtls_calloc    calloc

@@ -26,14 +26,14 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_PADLOCK_C)
 
-#include "mbedtls/padlock.h"
+#import "padlock.h"
 
 #include <string.h>
 

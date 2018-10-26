@@ -30,24 +30,24 @@
  */
 
 #if !defined(MBEDTLS_CONFIG_FILE)
-#include "mbedtls/config.h"
+#import "config.h"
 #else
 #include MBEDTLS_CONFIG_FILE
 #endif
 
 #if defined(MBEDTLS_X509_CSR_PARSE_C)
 
-#include "mbedtls/x509_csr.h"
-#include "mbedtls/oid.h"
+#import "x509_csr.h"
+#import "oid.h"
 
 #include <string.h>
 
 #if defined(MBEDTLS_PEM_PARSE_C)
-#include "mbedtls/pem.h"
+#import "pem.h"
 #endif
 
 #if defined(MBEDTLS_PLATFORM_C)
-#include "mbedtls/platform.h"
+#import "platform.h"
 #else
 #include <stdlib.h>
 #include <stdio.h>
